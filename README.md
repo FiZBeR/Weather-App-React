@@ -17,7 +17,7 @@ Esta es una aplicación de clima desarrollada en React que muestra el pronóstic
 - **Geolocalización** para obtener la ubicación automáticamente.
 - **API de clima** para obtener datos en tiempo real.
 
-##Configura tu API Key 🔑
+## Configura tu API Key 🔑
 
 La aplicación requiere una API Key para obtener datos del clima. Puedes obtener una clave gratuita registrándote en un proveedor de API de clima, como OpenWeatherMap.
 

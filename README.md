@@ -1,8 +1,26 @@
-# React + Vite
+# Weather App 🌦️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación de clima desarrollada en React que muestra el pronóstico del tiempo en la ubicación actual del usuario. Al iniciar la app, esta detecta automáticamente la ubicación y la envía a una API de clima, la cual nos devuelve la información del clima de ese lugar en tiempo real.
 
-Currently, two official plugins are available:
+![Interfaz de la Weather App](./assets/Captura1.JPG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Características 🚀
+
+- Obtención automática de la ubicación del usuario.
+- Muestra el clima actual basado en la ubicación.
+- Interfaz sencilla y amigable.
+
+## Tecnologías utilizadas 🛠️
+
+- **React** para la creación de componentes e interfaz de usuario.
+- **Geolocalización** para obtener la ubicación automáticamente.
+- **API de clima** para obtener datos en tiempo real.
+
+##Configura tu API Key 🔑
+
+La aplicación requiere una API Key para obtener datos del clima. Puedes obtener una clave gratuita registrándote en un proveedor de API de clima, como OpenWeatherMap.
+
+- Regístrate en el sitio y obtén tu API Key.
+- Crea un archivo .env en la raíz del proyecto.
+- Agrega tu clave al archivo con el siguiente formato: VITE_WEATHER_API_KEY=TU_API_KEY_AQUI

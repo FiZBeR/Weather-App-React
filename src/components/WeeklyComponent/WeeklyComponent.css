@@ -1,0 +1,44 @@
+.contenedorWeek {
+    border-radius: 5px;
+    display: flex;
+    gap: 17px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.contenedorsubtitulo {
+    width: 100%;
+}
+
+.subtituloWeek {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: larger;
+    font-weight: 400;
+    
+    margin: 0;
+    /*background: linear-gradient(to top, #1a6ab9, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    text-align: left;
+    color: white;
+}
+
+.itemWeek {
+    max-width: 150px;
+    flex: 1;
+    padding: 10px;
+    background-color: #204473;
+    max-height: 250px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.textWeek {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    margin: 0;
+    color: white;
+    text-align: left;
+}

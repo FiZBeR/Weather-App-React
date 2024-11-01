@@ -1,0 +1,29 @@
+#root{
+  margin: 30px;
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  border-radius: 20px;
+  border: solid 3px white;
+}
+
+body {
+  padding-left: 130px;
+  background-color: #204473;
+}
+
+/*#4B8CA6    #3E688C*/
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

@@ -1,0 +1,29 @@
+.itemInterno {
+    width: 60px;
+}
+
+.imagentempe {
+    width: 55px;
+}
+
+.subconteiner {
+    background-color: lightblue;
+}
+
+.imagen {
+    max-width: 20px;
+}
+
+.contenedorDay {
+    border-radius: 5px;
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textotempe {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: smaller;
+}

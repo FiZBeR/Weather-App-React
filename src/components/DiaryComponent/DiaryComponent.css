@@ -1,0 +1,70 @@
+.conteiner-one {
+    background-color: #204473;
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+.section-options {
+    display: flex;
+    background-color: #204473;
+    margin-inline: 10px;
+}
+
+.icon-section {
+    width: 20px;
+    height: 20px;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-height: 30px;
+    padding-top: 5px;
+}
+
+
+
+.boton {
+    background-color: #204473;
+    color: white;
+    font-size: smaller;
+    border: none;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+/*.conteiner-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  Centra los elementos horizontalmente 
+    align-items: center;
+}
+
+.item {
+    flex: 1 ; /* Permite que los elementos se ajusten y ocupen el mismo espacio 
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento 
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px; /* Espaciado entre los elementos 
+}*/
+
+.container-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado dentro del contenedor */
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho del contenedor */
+    max-width: 1200px; /* Limita el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor dentro de su contenedor padre */
+}
+.item {
+    flex: 1 1 200px; /* Permite que los elementos se ajusten y ocupen el mismo espacio, con un tamaño mínimo de 200px */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total del elemento */
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px; /* Espaciado entre los elementos */
+    min-width: 200px; /* Asegura un ancho mínimo de 200px */
+}

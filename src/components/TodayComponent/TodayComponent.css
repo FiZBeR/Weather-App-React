@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.texto {
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+}
+
+.tempToday {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.subtitulo {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-size: larger;
+    font-weight: bold;
+    padding-top: 20px;
+    
+    margin: 0;
+    background: linear-gradient(to top, #1a6ab9, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.todaycomponent {
+    display: flex;
+}
+
+.parteOne {
+    justify-items: start;
+    text-align: left;
+}
+
+.parteUno {
+    font-size: small;
+}
+
+.parteTwo {
+    display: flex;
+    justify-content: left;
+    padding-left: 330px;
+}
+
+.Two-One {
+    justify-items: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.climahoy {
+    margin: 0px;
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 16px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Two-TWo {
+    justify-content: flex-end;
+}
+
+.subconteinerToday {
+    display: flex;
+    align-items: center;
+    height: 18px;
+}
+
+.icon-prinicpal {
+    width: 130px;
+    height: 130px;
+    padding-top: 20px;
+}
+
+.icon-sub {
+    width: 18px;
+    height: 18px;
+    padding-right: 10px;
+}
+
+.textoparteDos {
+    color: white;
+    font-size: smaller;
+}

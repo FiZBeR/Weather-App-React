@@ -1,0 +1,31 @@
+#root {
+  max-width: 70%;
+  max-height: 70%;
+  margin: 0 auto;
+  padding: 9rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  text-align: center;
+  background-image: url("./Images/sky.jpg");
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen dentro del contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+

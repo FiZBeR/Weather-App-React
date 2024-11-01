@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.header {
+    max-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos, ajusta según sea necesario */
+    padding: 20px; /* Espacio interior del contenedor, ajusta según sea necesario */
+    padding-left: 0px;
+}
+
+.tittle-one {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:xx-large;
+    
+    margin: 0;
+    /*background: linear-gradient(to top, #1a6ab9, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;*/
+    color: white;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+}
+
+.simple-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    margin: 0;
+    color: white;
+}
+
+.form-search-city {
+    display: flex;
+    align-items: center;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Header.css */
+
+/* Contenedor del formulario para centrar los elementos */
+.form-search-city {
+    display: flex;
+    align-items: center;
+    background-color: #1b1e22;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-input {
+    background: transparent; /* Hacer el fondo transparente */
+    border: none;
+    outline: none;
+    color: #ccc;
+    padding: 10px;
+    border-radius: 25px 0 0 25px;
+    width: 300px;
+}
+
+.search-input::placeholder {
+    color: rgb(217, 217, 217); /* Cambiar el color del placeholder */
+}
+
+.search-btn {
+    background-color: rgb(217, 217, 217);
+    border: none;
+    color: #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn:hover {
+    background-color: #40444b;
+}
+
+.search-icon {
+    width: 16px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 16px;
+}
+/* Estilos para el botón de búsqueda */
+.search {
+    padding: 10px 20px;
+    background-color: #fff; /* Color de fondo del botón */
+    border: none; /* Sin bordes */
+    border-radius: 0 25px 25px 0; /* Bordes redondeados en el lado derecho */
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+.search-btn {
+    width: 40px; 
+    height: 40px; 
+    background: url("./Images/icons8-búsqueda-50.png") no-repeat center center; 
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+*/
+
+.icon-ubica {
+    width: 20px;
+}
+
+.logo-weather {
+    width: 60px;
+}

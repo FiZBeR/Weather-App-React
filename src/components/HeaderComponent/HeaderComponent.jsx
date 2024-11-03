@@ -9,7 +9,7 @@ import { useState } from 'react';
 export const HeaderComponent = ( {weatherData} ) => {
 
   if (!weatherData || !weatherData.location || !weatherData.current) {
-    return <div>Loading...</div>; // O muestra un mensaje de error, un spinner, etc.
+    return <span class="loader"></span> // O muestra un mensaje de error, un spinner, etc.
   }
 
   const { location } = weatherData; 

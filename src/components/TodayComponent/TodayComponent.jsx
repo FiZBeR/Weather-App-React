@@ -10,7 +10,7 @@ export const TodayComponent = ({ weatherData } ) => {
   const { current } = weatherData;
 
     if (!weatherData?.current) {
-      return <p>No hay datos disponibles.</p>;
+      return <></>
     }
 
     return (

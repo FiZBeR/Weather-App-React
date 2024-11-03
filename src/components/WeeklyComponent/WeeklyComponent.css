@@ -33,6 +33,7 @@
     max-height: 250px;
     border-radius: 10px;
     justify-content: center;
+    border: solid 1px white;
 }
 
 .textWeek {

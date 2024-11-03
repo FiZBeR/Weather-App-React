@@ -5,7 +5,10 @@ import lluvia from './Images/lluvia-32.png'
 import humedad from './Images/higrómetro-30.png'
 import viento from './Images/viento-30.png'
 import temperatura from './Images/temperature.png'
-import { ChooseComponent } from './ChooseComponent/ChooseComponent';
+import { HumedityComponent } from './ChooseComponent/HumedityComponent';
+import { TemperatureComponent } from './ChooseComponent/TemperatureComponent';
+import { WindComponent } from './ChooseComponent/WindComponent';
+import { LluviaComponent } from './ChooseComponent/LluviaComponent';
 
 export const DiaryComponent = ({ weatherData }) => {
 
@@ -14,12 +17,10 @@ export const DiaryComponent = ({ weatherData }) => {
 
     const handleTemperature = () => {
       setItem("temperature");
-      console.log("T clicked");
     };
 
     const handleWind = () => {
       setItem("wind");
-      console.log("W clicked");
     };
 
     const handlePrecipi = () => {
@@ -32,38 +33,41 @@ export const DiaryComponent = ({ weatherData }) => {
       console.log("H clicked");
     };
 
-    console.log("itemD: " + item);
-
-  return (
+    if (!weatherData || !weatherData.location || !weatherData.current) {
+      return <></> // O muestra un mensaje de error, un spinner, etc.
+    } else {
+      return (
     
-    <article className="conteiner-one">
-        <section className="section-options">
-          <div className='part'>
-            <img src={temperatura} className="icon-section" />
-            <button onClick={ handleTemperature }  className="boton">Temperature</button>
-          </div>
-            
-          <div className='part'>
-            <img src={viento} className="icon-section" />
-            <button onClick={ handleWind }  className="boton">Wind</button>
-          </div>  
-
-          <div className='part'>
-            <img src={lluvia} className="icon-section" />
-            <button onClick={ handlePrecipi }  className="boton">Precipitation</button>
-          </div>  
-            
-          <div className='part'>
-            <img src={humedad} className="icon-section" />
-            <button onClick={ handleHumedity }  className="boton">Humidity</button>
-          </div>
-        </section>
-
-        <div className="conteiner-two">
-          <ChooseComponent weatherData={ weatherData } choose = {item} className='item'/>
-        </div>
-    </article>
-  )
+        <article className="conteiner-one">
+            <section className="section-options">
+              <div className='part'>
+                <img src={temperatura} className="icon-section" />
+                <button onClick={ handleTemperature }  className="boton">Temperature</button>
+              </div>
+                
+              <div className='part'>
+                <img src={viento} className="icon-section" />
+                <button onClick={ handleWind }  className="boton">Wind</button>
+              </div>  
+    
+              <div className='part'>
+                <img src={lluvia} className="icon-section" />
+                <button onClick={ handlePrecipi }  className="boton">Precipitation</button>
+              </div>  
+                
+              <div className='part'>
+                <img src={humedad} className="icon-section" />
+                <button onClick={ handleHumedity }  className="boton">Humidity</button>
+              </div>
+            </section>
+    
+            <div className="conteiner-two">
+              {/* <ChooseComponent weatherData={ weatherData } choose = {item} className='item'/> */}
+              {item == "temperature" ? <TemperatureComponent weatherData={ weatherData }/> : item == "wind" ?  <WindComponent weatherData={ weatherData }/> : item == "lluvia" ? <LluviaComponent weatherData={ weatherData }/> : item == "humedity" ? <HumedityComponent weatherData={ weatherData }/> : <TemperatureComponent/>}
+            </div>
+        </article>
+      )
+    }
 }
 
 DiaryComponent.propTypes = {

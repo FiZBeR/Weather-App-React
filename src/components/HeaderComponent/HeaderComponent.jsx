@@ -6,7 +6,7 @@ import buscar from './Images/icons8-búsqueda-50.png'
 import iconbunny_removebg_preview from './Images/iconbunny-removebg-preview.png';
 import { useState } from 'react';
 
-export const HeaderComponent = ( {weatherData} ) => {
+export const HeaderComponent = ( {weatherData, setCity} ) => {
 
   if (!weatherData || !weatherData.location || !weatherData.current) {
     return <span class="loader"></span> // O muestra un mensaje de error, un spinner, etc.
@@ -14,18 +14,17 @@ export const HeaderComponent = ( {weatherData} ) => {
 
   const { location } = weatherData; 
 
-  const [ city, setCity] = useState('');
+  //const [ city, setCity] = useState('');
 
   const conseguirDatosFormulario = e => {
 
     e.preventDefault();
-    alert('Esta funcion aun no esta disponible');
-    /* e es el objeto de nuestro evento conseguirDatosFormulario
+    //alert('Esta funcion aun no esta disponible');
+    //e es el objeto de nuestro evento conseguirDatosFormulario
     let datos = e.target; 
     let city = datos.city.value;
-    console.log(city);
     setCity(city);
-    */
+    console.log(city);
   }
 
   return (

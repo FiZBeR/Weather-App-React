@@ -1,5 +1,5 @@
 
-export const getLocationAPI = async ({busqueda}) => {
+export const getLocationAPI = async (busqueda) => {
 
   console.log("busqueda en API " + busqueda);
   const respuesta = await fetch(`https://nominatim.openstreetmap.org/search?q=${busqueda}&format=json&limit=1`)

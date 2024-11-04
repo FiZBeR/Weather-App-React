@@ -13,7 +13,6 @@ function App() {
 
   const [response, setResponse] = useState(""); //obteniendo
   const [city, setCity] = useState("");
-  const [coordenadas, setCoordenadas] = useState({});
   const [location, setLocation] = useState({lat: null, lon: null});
   const [data, setData] = useState({});
   
@@ -40,6 +39,7 @@ function App() {
               setResponse("error")
         })
     } else {
+      console.log("city en App: " + city);
       getLocationAPI(city)
         .then((coordenadas) => {
           console.log(coordenadas);
